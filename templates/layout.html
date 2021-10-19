@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>ernie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='normalize.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='site.css') }}">
+</head>
+
+<body>
+    <div class="container">
+      </br>
+      </br>
+      <div class="row">
+        {% block content %}
+        {% endblock %}
+      </div>
+    </div>
+</body>
+</html>

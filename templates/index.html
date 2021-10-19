@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+  <h1>Ask Ernie</h1>
+  <form action="{{ url_for('ask') }}" method="post">
+    <dl>
+      <label for="prompt">Ask Ernie a question:</label>
+      <input type="text" class="prompt" name="prompt" value="Hello, This is Farmer Ernie. You might wonder why a city kid like me is doing out here in the [MASK]?" />
+    </dl>
+    <dl>
+      <input id="ask" type="submit" value="Ask Ernie">
+      {{ form.hidden_tag() }}
+    </dl>
+  </form>
+</div>
+{% endblock %}
