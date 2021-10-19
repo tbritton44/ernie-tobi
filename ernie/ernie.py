@@ -19,3 +19,5 @@ def ask():
     form = AskErnie(request.form)
     masks = unmasker(form.prompt.data)
     return render_template("results.html", masks=masks)
+
+# change
